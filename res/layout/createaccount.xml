@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <TableRow
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Name"
+            android:textColor="#acbbde"
+            android:textSize="23sp" />
+        
+        <EditText
+            android:id="@+id/ename"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:textSize="21sp" />
+
+          
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tuserid"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Userid"
+            android:textColor="#acbbde"
+            android:textSize="23sp" />
+        
+        <EditText
+            android:id="@+id/euserid"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:textSize="21sp" />
+
+          
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tpass"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Password"
+            android:textColor="#acbbde"
+            android:textSize="23sp" />
+        
+        <EditText
+            android:id="@+id/epass"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:textSize="21sp"
+            android:inputType="numberPassword"
+            android:hint="numeric" />
+
+          
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tcpass"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Conform Password"
+            android:textColor="#acbbde"
+            android:textSize="23sp" />
+        
+        <EditText
+            android:id="@+id/ecpass"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:textSize="21sp"
+            android:inputType="numberPassword"
+            android:hint="numeric" />
+
+          
+    </TableRow>
+    
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#acbbde"
+        android:textSize="23sp" />
+
+</TableLayout>

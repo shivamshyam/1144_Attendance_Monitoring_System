@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_centerInParent="true" >
+
+
+        <Button
+            android:id="@+id/bvpractical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bvtheory"
+            android:layout_alignParentLeft="true"
+            android:text="View Practical Attendance"
+            android:textColor="#acbbde"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bvtheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnfilltheory"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="View Theory Attendence"
+            android:textColor="#acbbde"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnfilltheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Fill Theory Attendance"
+            android:textColor="#acbbde"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnfillpractical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnfilltheory"
+            android:text="Fill Practical Attendance"
+            android:textColor="#acbbde"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/tlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnfillpractical"
+            android:text="Logout"
+            android:textColor="#acbbde"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+    <TableRow>
+
+        <TextView>
+            
+        </TextView>
+        <TextView
+            android:id="@+id/smalldate"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="DD-MM-YY"
+            android:textColor="#acbbde"
+            android:textSize="17sp" />
+        
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Date"
+            android:textColor="#acbbde"
+            android:textSize="23sp" />
+        
+        <TextView
+        android:id="@+id/ttdate"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="date"
+        android:textColor="#acbbde"
+        android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/sem"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Sem"
+            android:textColor="#acbbde"
+            android:textSize="23dp" />
+
+        <Spinner
+            android:id="@+id/tspinnersem"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:textColor="#000000" >
+
+                </Spinner>
+        
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="10dp">
+        
+       <TextView
+        android:id="@+id/stclass"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Class"
+        android:textColor="#acbbde"
+        android:textSize="23sp" /> 
+        
+       <Spinner
+            android:id="@+id/tspinnerclass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:textColor="#000000" >
+
+                </Spinner>
+        
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+  
+        <TextView
+            android:id="@+id/stp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:text="Student Present"
+            android:textColor="#acbbde"
+            android:textSize="23sp" />
+        
+        <EditText
+        android:id="@+id/etpresent"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        
+        android:background="#ffffff"
+        
+        android:inputType="number"
+        android:textSize="25sp" >
+
+        <requestFocus />
+    </EditText>
+        
+    </TableRow>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="#acbbde"
+        android:textSize="23sp" />
+    
+</TableLayout>
+</RelativeLayout>

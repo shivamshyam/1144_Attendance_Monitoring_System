@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tbllout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                 
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Name"
+                    android:textColor="#acbbde"
+                    android:textSize="23sp" />
+
+                <EditText
+                    android:id="@+id/ename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tuserid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="UserId"
+                    android:textColor="#acbbde"
+                    android:textSize="23sp" />
+
+                <EditText
+                    android:id="@+id/euserid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tpass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Password"
+                    android:textColor="#acbbde"
+                    android:textSize="23sp" />
+
+                <EditText
+                    android:id="@+id/ecpass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tcpass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Conform Password"
+                    android:textColor="#acbbde"
+                    android:textSize="23sp" />
+
+                <EditText
+                    android:id="@+id/epass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:hint="conform"
+                    android:inputType="textPassword"
+                    android:textSize="23sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbllout"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textColor="#acbbde"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

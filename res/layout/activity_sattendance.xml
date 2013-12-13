@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/uplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/btnErnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="View" />
+
+        <EditText
+            android:id="@+id/Ernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnErnum"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/btnErnum"
+            android:hint="Enter Enrollment No." />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tblhead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uplay" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/sbnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject" 
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/thrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theory"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/prat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practical"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblhead"
+        android:layout_centerHorizontal="true" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
